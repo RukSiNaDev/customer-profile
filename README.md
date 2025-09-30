@@ -21,7 +21,7 @@ This section focuses on meeting the design requirements and the specific technic
 
 The application is built based on the provided design specification.
 
-* **Figma Design Link:** [โปรดใส่ลิงก์ Figma สาธารณะของคุณที่นี่]
+* **Figma Design Link:** https://www.figma.com/design/NRBXhAFGFQa6YBN0EARfph/Customer-s-profile?t=jlxefvRPXP6qqnkd-1
 
 ### 2. Advanced Responsive Layout
 
