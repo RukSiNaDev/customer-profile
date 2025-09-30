@@ -1,8 +1,8 @@
-# Customer Dashboard UI (Assignment)
+# Customer Profile UI (Assignment)
 
 ## 🚀 Overview
 
-This project is a single-page Customer Dashboard UI developed with **React, TypeScript, and Vite**, utilizing **Tailwind CSS** for rapid styling and highly responsive design. The application adheres to a specified design and demonstrates advanced responsive techniques using CSS Grid.
+This project is a single-page Customer Profile UI developed with **React, TypeScript, and Vite**, utilizing **Tailwind CSS** for rapid styling and highly responsive design. The application adheres to a specified design and demonstrates advanced responsive techniques using CSS Grid.
 
 ### Key Technologies Used
 
