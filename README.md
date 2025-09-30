@@ -49,7 +49,7 @@ Follow these steps to set up and run the project locally.
 1.  **Clone the repository:**
     ```bash
     git clone https://github.com/RukSiNaDev/customer-profile.git
-    cd customer-dashboard-ui
+    cd customer-profile
     ```
 
 2.  **Install dependencies:**
