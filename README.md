@@ -82,5 +82,5 @@ yarn dev
 │   ├── index.css         # Tailwind directives and base styles
 │   └── main.tsx          # Entry point and ReactDOM setup
 │   
-# ... (ไฟล์อื่นๆ)
+# ... (another files)
 ```
