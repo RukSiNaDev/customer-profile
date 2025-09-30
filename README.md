@@ -1,4 +1,4 @@
-# Customer Dashboard UI (Assignment) | EXO Travel
+# Customer Dashboard UI (Assignment)
 
 ## 🚀 Overview
 
