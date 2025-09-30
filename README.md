@@ -6,10 +6,10 @@ This project is a single-page Customer Dashboard UI developed with **React, Type
 
 ### Key Technologies Used
 
-* **Framework:** React v18
+* **Framework:** React v19
 * **Language:** TypeScript
 * **Build Tool:** Vite
-* **Styling:** Tailwind CSS (utility-first)
+* **Styling:** Tailwind CSS
 
 ---
 
