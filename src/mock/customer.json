@@ -1,0 +1,19 @@
+{
+  "initials": "JD",
+  "fullName": "John Doe",
+  "company": "ABC company",
+  "activeSince": "15 January 2023",
+  "email": "john.doe@mail.com",
+  "phone": "02-xxx-xxxx",
+  "creditStatus": "NO CREDIT",
+  "salesperson": "Jane White",
+  "totalSpend": 10500,
+  "purchases": 245,
+  "activities": [
+    { "action": "Generated Report", "time": "15 min ago" },
+    { "action": "Received Email", "time": "1 hour ago" },
+    { "action": "Subscribed Promotion", "time": "5 hours ago" },
+    { "action": "Updated Profile", "time": "10 hours ago" },
+    { "action": "Updated Billing", "time": "15 hours ago" }
+  ]
+}
