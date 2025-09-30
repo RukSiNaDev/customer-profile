@@ -1,73 +1,70 @@
-# React + TypeScript + Vite
+# Customer Dashboard UI (Assignment) | EXO Travel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Overview
 
-Currently, two official plugins are available:
+This project is a single-page Customer Dashboard UI developed with **React, TypeScript, and Vite**, utilizing **Tailwind CSS** for rapid styling and highly responsive design. The application adheres to a specified design and demonstrates advanced responsive techniques using CSS Grid.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Key Technologies Used
 
-## React Compiler
+* **Framework:** React v18
+* **Language:** TypeScript
+* **Build Tool:** Vite
+* **Styling:** Tailwind CSS (utility-first)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Design & Implementation Highlights
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+This section focuses on meeting the design requirements and the specific technical challenges addressed in the code.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 1. Design Source
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+The application is built based on the provided design specification.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **Figma Design Link:** [โปรดใส่ลิงก์ Figma สาธารณะของคุณที่นี่]
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Advanced Responsive Layout
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+The layout uses **Tailwind CSS Grid** to achieve two distinct display behaviors based on screen size, ensuring an optimal user experience across devices:
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+| Screen Size | Layout | Order of Elements | Technical Implementation |
+| :--- | :--- | :--- | :--- |
+| **Desktop / Tablet** (`md` breakpoint and up) | **2-Column Layout** | Retains the original visual structure (Profile/Metrics on Left, Contact/Activity on Right). | Achieved using `md:grid-cols-2` combined with **`md:col-start/end`** and **`md:row-start/end`** utilities to place components precisely. |
+| **Mobile** (Small screens) | **1-Column Stack** | Custom, interleaved order: **1, 2, 3, 4, 5**. (Profile → Contact → Spend → Purchases → Activity). | Achieved using **`order-[n]`** utilities on individual components when the grid collapses to one column. |
+
+> **Note on Vertical Balance:** The `Recent Activity` card is dynamically sized using **`md:row-end-4`** on desktop to span multiple rows, ensuring the vertical balance of the right column matches the stacked metrics cards on the left column.
+
+---
+
+## 🛠️ Setup and Running the Project
+
+Follow these steps to set up and run the project locally.
+
+### Prerequisites
+
+* Node.js (v18 or higher recommended)
+* npm (or yarn/pnpm)
+
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [โปรดใส่ลิงก์ Git Repository สาธารณะของคุณที่นี่]
+    cd customer-dashboard-ui
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # หรือ
+    yarn install
+    ```
+
+### Running the Application
+
+Use the following command to start the development server. The application will be accessible at `http://localhost:5173/` (or similar port).
+
+```bash
+npm run dev
+# หรือ
+yarn dev
