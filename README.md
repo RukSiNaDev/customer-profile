@@ -67,3 +67,20 @@ Use the following command to start the development server. The application will 
 npm run dev
 # หรือ
 yarn dev
+```
+
+### Project Structure
+
+```
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/       # Reusable UI components (Header, Cards, etc.)
+│   ├── mock/
+│   │   └── customer.json # <--- Mock Data File Location
+│   ├── App.tsx           # Main application logic and layout structure
+│   ├── index.css         # Tailwind directives and base styles
+│   └── main.tsx          # Entry point and ReactDOM setup
+│   
+# ... (ไฟล์อื่นๆ)
+```
