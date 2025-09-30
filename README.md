@@ -55,7 +55,7 @@ Follow these steps to set up and run the project locally.
 2.  **Install dependencies:**
     ```bash
     npm install
-    # หรือ
+    # or
     yarn install
     ```
 
@@ -65,7 +65,7 @@ Use the following command to start the development server. The application will 
 
 ```bash
 npm run dev
-# หรือ
+# or
 yarn dev
 ```
 
